@@ -1,0 +1,9 @@
+1>Make sure to make a new directory let say new
+2>got to new (cd new)
+3>create a Dockerfile there and put jar file also there in same directory.
+--now run those command one by one--
+4>sudo systemctl status docker(docker ka status btayega)
+5>sudo systemctl enable docker
+6>docker build -t workshop .
+7>docker run -p 8081:8081 workshop(now check on the url: http://localhost:8081/workshop)
+8>for daemon mode: docker run -p 8081:8081 -d workshop(it will print the address of the container)
